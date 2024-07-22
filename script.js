@@ -123,22 +123,22 @@ addressInput.addEventListener("input", function(event){
 
 //Finalizar Pedido
 checkoutBtn.addEventListener("click", function(){
-    const isOpen = checkRestaurantOpen()
-    if(!isOpen){
-        Toastify({
-            text: "Ops... o restaurante está fechado!",
-            duration: 3000,
-            close: true,
-            gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
-            stopOnFocus: true, // Prevents dismissing of toast on hover
-            style: {
-              background: "#ef4444",
-            },
-            onClick: function(){} // Callback after click
-          }).showToast();
-    return
-    }
+    //const isOpen = checkRestaurantOpen()
+    //if(!isOpen){
+    //    Toastify({
+    //        text: "Ops... o restaurante está fechado!",
+    //        duration: 3000,
+    //        close: true,
+    //        gravity: "top", // `top` or `bottom`
+    //        position: "right", // `left`, `center` or `right`
+    //        stopOnFocus: true, // Prevents dismissing of toast on hover
+    //        style: {
+    //          background: "#ef4444",
+    //        },
+    //        onClick: function(){} // Callback after click
+    //      }).showToast();
+    //return
+    //}
 
     if(cart.length === 0) return
     if(addressInput.value === ""){
